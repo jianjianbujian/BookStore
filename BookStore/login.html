@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			body{
+				background: url(./images/background.jpg) repeat fixed center;
+			}
+			table{
+				width: 320px;
+				height: 250px;
+				border: 1px solid #4de0d0;
+				margin:200px auto;
+				text-align: center;
+				background: linear-gradient(#f0ffff,#00aaff);
+			}
+			table tr{
+				width: 320px;
+				height: 50px;
+				border: 1px solid blue;
+			}
+			font{
+				font-size: 35px;
+				font-weight: bold;
+			}
+			.button1{
+				width: 60px;
+				height: 40px;
+				border-radius: 10px;
+				margin: 20px 20px;
+				background-color: rgb(150,255,150);
+			}
+			.button2{
+				width: 60px;
+				height: 40px;
+				border-radius: 10px;
+				margin: 20px 20px;
+				background-color: rgb(255,150,150);
+			}
+			.button3{
+				width: 60px;
+				height: 40px;
+				border-radius: 10px;
+				margin: 20px 20px;
+				background-color: rgb(150,150,255);
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<form action="log.php" method="post">
+				<table>
+					<tr>
+						<td>
+							<font>用户登录</font>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							账&nbsp;&nbsp;&nbsp;&nbsp;号：<input type="text" name="userid" />
+						</td>
+					</tr>
+					<tr>
+						<td>
+							密&nbsp;&nbsp;&nbsp;&nbsp;码：<input type="password" name="password" />
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<input class="button1" type="submit" name="logsend" value="登录" />
+							<input class="button2" type="button" value="取消" onclick="window.location.href='index.php'"/>
+							<input class="button3" type="button" value="注册" onclick="window.location.href='userRegister.php'"/>
+						</td>
+					</tr>
+				</table>
+			</form>
+		</div>
+	</body>
+</html>
